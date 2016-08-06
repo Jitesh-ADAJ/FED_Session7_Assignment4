@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment4</title>
+</head>
+<body>
+	<h1>Mouse movement in Document.....</h1>
+
+<h1 id="h1" ></h1>
+
+<h1 id="h2" ></h1>
+<script>
+
+		function showposi(event)
+		{
+
+			var x;
+			var y;
+
+			x=document.getElementById("h1");
+			y=document.getElementById("h2");
+
+			x.innerHTML="x ="+ event.clientX + ' '+Date();
+			y.innerHTML="y ="+ event.clientY + ' '+Date();
+
+		}
+		document.onmousemove=showposi;
+
+
+</script>
+</body>
+
+
+</html>
